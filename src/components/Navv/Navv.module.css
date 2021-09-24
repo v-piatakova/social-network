@@ -1,0 +1,21 @@
+.nav{
+    grid-area: n;
+    /*background-color: #D98327;*/
+}
+
+nav {
+    color: #6899D3;
+    line-height:2;
+    margin-left:10px;
+
+}
+
+.nav img{
+    width: 20px;
+    height: 20px;
+    opacity: 0.80;
+}
+
+.item{
+    color: white;
+}
