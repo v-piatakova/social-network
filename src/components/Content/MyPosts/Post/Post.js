@@ -1,27 +1,17 @@
 import React from 'react';
-import classes from './MyPosts.module.css';
+import classes from './Post.module.css';
 
-const MyPosts = () => {
-    return(
-        <div >
-            My posts
-            <div>
-                <textarea> </textarea>
-                <button>Add post</button>
-
-            </div>
-            <div className={classes.posts}>New posts</div>
-            <div>
-                <div className={classes.item}>
-                    <img src = 'https://cdn-icons-png.flaticon.com/512/2919/2919600.png'/>
-                    post 1
-                </div>
-                <div className={classes.item}>
-                    post 2
-                </div>
+const Post = (props) => {
+    return (
+        <div className={classes.item}>
+            <img src='https://cdn-icons-png.flaticon.com/512/2919/2919600.png'/>
+            {props.message}
+            <div className={classes.actions}>
+                <img src='https://cdn-icons-png.flaticon.com/512/535/535183.png'/>
+                <span>like</span> {props.likes}
             </div>
         </div>
     )
 }
-export default MyPosts;
+export default Post;
 

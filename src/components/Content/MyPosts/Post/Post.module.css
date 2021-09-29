@@ -1,10 +1,18 @@
-.content{
+.content {
     grid-area: c;
 }
-.item{
-    color:white;
+
+.item {
+    color: white;
 }
 
-.item img{
-    width: 40px;
+.item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.actions img {
+    width: 10px;
+    height: 10px;
 }
